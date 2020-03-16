@@ -1,0 +1,142 @@
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  outline: none;
+}
+.active-c {
+  color: #fff;
+}
+.news-app {
+  font-family: "Trebuchet MS", sans-serif;
+  width: 85%;
+  margin: 0 auto;
+  background: #f8f8f8;
+}
+
+.news-top-header {
+  background: #ff6600;
+  padding: 8px;
+}
+
+.news-top-nav {
+  display: flex;
+  height: 20px;
+}
+
+.news-menu {
+  list-style: none;
+  display: flex;
+  margin: 0 0 0 8px;
+  padding: 0;
+}
+
+.news-menu li {
+  padding: 0 8px;
+}
+
+.news-list-cont {
+  background: #f6f6ef;
+}
+
+.list-item {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  padding: 8px 8px;
+  color: rgb(120, 120, 120);
+}
+.list-item:nth-child(odd) {
+  background: #efefea;
+}
+
+.list-right {
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-items: flex-start;
+  flex-flow: wrap;
+  line-height: 18px;
+  text-align: left;
+}
+.list-title {
+  font-size: 14px;
+  margin: 0 5px 0 0;
+}
+
+.no-comments {
+  font-size: 14px;
+  width: 90px;
+  min-width: 50px;
+  max-width: 100px;
+  text-align: center;
+}
+.upvote-cont {
+  width: 50px;
+}
+.upvote-arrow {
+  border: 0px;
+  margin: 0 5px 0;
+  padding: 0 6px;
+  background: url("https://news.ycombinator.com/grayarrow.gif") no-repeat;
+  cursor: pointer;
+}
+.user-name,
+.no-comments,
+.list-title,
+.hide-btn {
+  color: rgb(0, 0, 0);
+}
+.link-domain,
+.user-name,
+.posted-time {
+  margin-right: 5px;
+}
+
+.link-domain {
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+}
+
+.link-domain:hover {
+  text-decoration: underline;
+}
+
+.hide-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0 2px;
+}
+.more-result {
+  text-align: left;
+  cursor: pointer;
+  border: none;
+  margin: 5px 0;
+  padding: 5px;
+  background: none;
+  color: #ff6600;
+  margin-left: 146px;
+}
+
+@media only screen and (max-width: 750px) and (min-width: 300px) {
+  .news-app {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  body {
+    margin: 0;
+  }
+  .more-result {
+    margin-left: 0;
+  }
+  .news-app {
+    text-align: center;
+  }
+}
